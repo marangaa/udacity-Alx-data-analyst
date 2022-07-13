@@ -1,2 +1,3 @@
-# udacity-Alx-data-analyst
- files for udacity data analyst nanodegree
+# project 2 wrangling data
+
+files for my second project, had to wrangle we rate dogs data
