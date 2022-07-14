@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>data wrangling project, WeRateDogs twitter data</title>
+</head>
+<body>
+
+<section>
+    <h2>gathering and  data</h2>
+    <p>
+        the data to work on was given from the following files:
+        - a dataset containing archived twitter data from the weRateDogs website <em>twitter-archive-enhanced.csv`</em>
+        - the tweet image predictions file, obtained from running images through a neural network and obtained programmatically
+        - additional data from the Twitter API, using the tweepy library
+
+        the project required storing the data from the API into a file in <em>json</em> format, working with the Twitter API through tweepy a python library was fairly easy
+
+    </p>
+
+    <h2>assessing the data</h2>
+    <p>
+        data assessment was done in two stages, visual and programmatic, when assessing data
+        visually, the source column which had the platform names still ahd href tags
+        the dog names have issues, ie some names are clearly not names, some have ‘none’ instead of NAn
+        also dog stages were spread across different columns, also there were alot of retweets in the dataset
+
+        accessing the data programmatically allowed us to identify some issues such
+        - incorrect data types for the timestamp columns
+        - columns in the dataset are of int type
+        - some tweets don't contain useful data for use in the project
+    </p>
+
+    <h2>cleaning the data</h2>
+    <p>
+        started out by making copies of the data using pandas, recommended practice while working with such datasets.
+        define code test framework was useful in documenting the issues found from the other project stages, pandas was useful to convert datatypes in columns to make them easier to use.
+    </p>
+
+</section>
+
+</body>
+</html>
