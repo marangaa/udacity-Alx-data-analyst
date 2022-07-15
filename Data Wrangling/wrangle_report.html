@@ -7,34 +7,35 @@
 <body>
 
 <section>
-    <h2>gathering and  data</h2>
+    <h2>gathering and assessing data</h2>
     <p>
         the data to work on was given from the following files:
         - a dataset containing archived twitter data from the weRateDogs website <em>twitter-archive-enhanced.csv`</em>
         - the tweet image predictions file, obtained from running images through a neural network and obtained programmatically
-        - additional data from the Twitter API, using the tweepy library
+        - additional data to be obtained from the Twitter API, using the tweepy library and twitter developer credentials once you apply for a developer account
 
-        the project required storing the data from the API into a file in <em>json</em> format, working with the Twitter API through tweepy a python library was fairly easy
+        the project required storing the data from the API into a file in <em>json</em> format, working with the Twitter API through tweepy a python library was fairly easy. the instructors mentioned the data would take some time to be collected, saved us alot of time from thinking some code did not work.
 
     </p>
 
     <h2>assessing the data</h2>
     <p>
-        data assessment was done in two stages, visual and programmatic, when assessing data
-        visually, the source column which had the platform names still ahd href tags
-        the dog names have issues, ie some names are clearly not names, some have ‘none’ instead of NAn
-        also dog stages were spread across different columns, also there were alot of retweets in the dataset
+        data assessment was done in two stages, visual assessment  and programmatic, when assessing data
+        visually, the source column which had the platform names still had  href tags which were not useful and actual content needed to be extracted
+        the dog names have issues, ie some names are clearly not names, some have ‘none’ instead of NAn, some were a single letter which indicates the dog probably had two names and was truncated to one while obtaining the data
+        also dog stages were spread across different columns.
+        There were alot of retweets in the dataset, which were not needed for analysis and needed to be removed from the dataset
 
         accessing the data programmatically allowed us to identify some issues such
-        - incorrect data types for the timestamp columns
-        - columns in the dataset are of int type
+        - incorrect data types for the all the timestamp columns
+        - ID columns in the dataset are of int type
         - some tweets don't contain useful data for use in the project
     </p>
 
     <h2>cleaning the data</h2>
     <p>
         started out by making copies of the data using pandas, recommended practice while working with such datasets.
-        define code test framework was useful in documenting the issues found from the other project stages, pandas was useful to convert datatypes in columns to make them easier to use.
+        The defined code test framework was useful in documenting the issues found from the other project stages, and pandas was useful to convert datatypes in columns using the built-in functions to make them easier to use.
     </p>
 
 </section>
